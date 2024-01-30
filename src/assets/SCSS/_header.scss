@@ -5,11 +5,17 @@
 .Header{
     width: 100%;
     height: 7rem;
-    padding: 1rem;
+    padding: 1rem 0.10rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    box-shadow: 1px 1px 5px color.$navy_blue;
+    background-color: color.$snow_white;
+    position: fixed;
+    z-index: 1;
+
         &__logo{
+            padding-inline-start: 1.5rem;
             @extend %logo;
         }
         &__content{
@@ -19,7 +25,7 @@
             align-items: center;
 
             &__reserveButton{
-                width: 50%;
+                width: 60%;
                 height: auto;
                 @include mixins.btn;
                 @extend %btn-fonts;

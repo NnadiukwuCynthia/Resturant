@@ -1,0 +1,44 @@
+@use './color' as color;
+@use './placeholder';
+
+.navList{
+    height: 100vh;
+    width: 17%;
+    padding-block-start: 8rem;
+    box-shadow: 1px 1px 5px color.$navy_blue;
+    position: absolute; 
+    right: -300px;
+    transition: right 1s ease-in;
+
+    
+    &__Item{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        &__menuItems{
+            @extend %btn-fonts;
+            font-size: 14px;
+            font-weight: 600;
+            margin-block: 0.7rem;
+            text-decoration: none;
+            color: color.$navy_blue;
+        }
+
+        &__active{
+            @extend %btn-fonts;
+            font-size: 14px;
+            font-weight: 600;
+            margin-block: 0.7rem;
+            text-decoration: none;
+            color: color.$sunset_yellow;
+            text-decoration: underline;
+
+            
+        }
+    }
+}
+
+.visible{
+    right: 0;
+}
