@@ -13,16 +13,30 @@
             @extend %logo;
         }
         &__content{
-            width: 30%;
+            width: 25%;
             display: flex;
-            justify-content: space-between;
+            justify-content: center;
             align-items: center;
 
             &__reserveButton{
-                width: 70%;
+                width: 50%;
                 height: auto;
                 @include mixins.btn;
                 @extend %btn-fonts;
+            }
+
+            &__hamburger{
+
+                &__button{
+                    font-size: 35px;
+                    padding: 5px;
+                    margin-inline-start: 10px;
+                    border: none;
+                    color: color.$navy_blue;
+                 
+
+                    
+                }
             }
         }
 }
