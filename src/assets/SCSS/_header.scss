@@ -1,0 +1,28 @@
+@use './placeholder';
+@use './color' as color;
+@use './mixins';
+
+.Header{
+    width: 100%;
+    height: 7rem;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+        &__logo{
+            @extend %logo;
+        }
+        &__content{
+            width: 30%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            &__reserveButton{
+                width: 70%;
+                height: auto;
+                @include mixins.btn;
+                @extend %btn-fonts;
+            }
+        }
+}

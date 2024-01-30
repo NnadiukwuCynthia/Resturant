@@ -1,0 +1,12 @@
+@use './font' as font;
+@use './color' as color;
+
+%logo{
+    font-family: font.$Logo-Font;
+    font-size: 50px;
+    color: color.$navy_blue;
+}
+
+%btn-fonts{
+    font-family: font.$primary-font;
+}

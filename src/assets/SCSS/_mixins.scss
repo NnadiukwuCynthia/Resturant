@@ -1,0 +1,12 @@
+@use './color' as color;
+
+@mixin btn () {
+    padding: 0.5rem 0.125rem;
+    text-align: center;
+    cursor: pointer;
+    border: 1px solid color.$navy_blue;
+    font-size: 15px;
+    color: color.$navy_blue;
+    text-transform: uppercase;
+    font-weight: 600;
+}
