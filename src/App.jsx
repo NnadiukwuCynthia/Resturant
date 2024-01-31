@@ -2,6 +2,7 @@ import { useState } from "react"
 import { Outlet } from "react-router-dom"
 import Header from "./components/Header"
 import NavList from './components/NavList';
+import Hero from "./components/Hero";
 
 
 
@@ -15,9 +16,10 @@ const App = () => {
 
   return (
     <>
-    <div>
+    <div className="root">
       <Header isMenuVisible={isMenuVisible} toggleMenu={toggleMenu}/>
-      <NavList isMenuVisible={isMenuVisible}/>  
+      <NavList isMenuVisible={isMenuVisible}/>
+      <Hero/>  
      </div>
     <Outlet/>
     </>

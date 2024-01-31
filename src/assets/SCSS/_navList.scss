@@ -3,12 +3,14 @@
 
 .navList{
     height: 100vh;
-    width: 17%;
+    width: 20%;
     padding-block-start: 8rem;
     box-shadow: 1px 1px 5px color.$navy_blue;
-    position: absolute; 
-    right: -300px;
-    transition: right 1s ease-in;
+    position: fixed; 
+    right: 0;
+    background-color: color.$snow_white;
+    // transform: translateX(0);
+    // transition: 1.5s ease;
 
     
     &__Item{
@@ -39,6 +41,8 @@
     }
 }
 
-.visible{
-    right: 0;
-}
+// .visible{
+//     right: 0;
+//     transform: translateX(100%);
+//     transition: 1.5s ease all;
+// }
