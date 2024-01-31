@@ -12,11 +12,15 @@
     box-shadow: 1px 1px 5px color.$navy_blue;
     background-color: color.$snow_white;
     position: fixed;
-    z-index: 1;
+    z-index: 5;
 
         &__logo{
             padding-inline-start: 1.5rem;
-            @extend %logo;
+            
+            a{
+                text-decoration: none;
+                @extend %logo;
+            }
         }
         &__content{
             width: 25%;
@@ -38,10 +42,7 @@
                     padding: 5px;
                     margin-inline-start: 10px;
                     border: none;
-                    color: color.$navy_blue;
-                 
-
-                    
+                    color: color.$navy_blue;                             
                 }
             }
         }

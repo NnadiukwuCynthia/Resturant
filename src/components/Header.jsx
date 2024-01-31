@@ -1,6 +1,7 @@
 import { useState } from "react";
 import PropTypes from "prop-types";
 import { FaHamburger, FaTimes } from "react-icons/fa";
+import { NavLink } from 'react-router-dom';
 
 const Header = ({ isMenuVisible, toggleMenu }) => {
     const [isHamburger, setIsHamburger] = useState(true)
@@ -12,7 +13,7 @@ const Header = ({ isMenuVisible, toggleMenu }) => {
 
   return (
     <div className="Header">
-        <div className="Header__logo">Cuisine</div>
+        <div className="Header__logo" ><NavLink to='/'>Cuisine</NavLink></div>
         <div className="Header__content">
             <button className="Header__content__reserveButton">reservation</button>
             <div className="Header__content__hamburger">

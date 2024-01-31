@@ -1,0 +1,298 @@
+/*******************
+Box Sizing
+ *******************/
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+/****************************
+  Generic Margins and Paddings
+   ****************************/
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+ol,
+li,
+p,
+pre,
+blockquote,
+figure,
+hr {
+  margin: 0;
+  padding: 0;
+}
+
+/*******************
+  Lists
+   *******************/
+ul {
+  list-style: none;
+}
+
+/*******************
+  Forms and buttons
+   *******************/
+input,
+textarea,
+select,
+button {
+  color: inherit;
+  font: inherit;
+  letter-spacing: inherit;
+}
+
+/* I usually expand input and textarea to full-width */
+/* More friendly border */
+input,
+textarea,
+button {
+  border: 1px solid gray;
+}
+
+/* Some defaults for one-liner buttons */
+button {
+  padding: 0.75em 1em;
+  border-radius: 0;
+  line-height: 1;
+  background-color: transparent;
+}
+
+button * {
+  pointer-events: none;
+}
+
+/***********************************
+  Easy responsive for media elements
+   ***********************************/
+img,
+svg,
+iframe,
+video,
+object,
+embed {
+  display: block;
+  max-width: 100%;
+}
+
+/*******************
+  Useful table styles
+   *******************/
+table {
+  table-layout: fixed;
+  width: 100%;
+}
+
+/*******************
+  The hidden attribute
+   *******************/
+[hidden] {
+  display: none !important;
+}
+
+/*******************
+  Noscript
+   *******************/
+noscript {
+  display: block;
+  margin-bottom: 1em;
+  margin-top: 1em;
+}
+
+/*******************
+  Focus
+   *******************/
+[tabindex="-1"] {
+  outline: none !important;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url(../Fonts/Inter/Inter-VariableFont_slnt\,wght.ttf);
+}
+@font-face {
+  font-family: "Lobster";
+  src: url(../Fonts/Lobster/Lobster-Regular.ttf);
+}
+.Header__logo a {
+  font-family: "Lobster", sans-serif;
+  font-size: 50px;
+  color: rgba(4, 11, 51, 0.9803921569);
+}
+
+.navList__Item__menuItems, .navList__Item__active, .Header__content__reserveButton, .app__footer__text {
+  font-family: "Inter", sans-serif;
+}
+
+.root {
+  width: 100%;
+}
+
+.app__logo {
+  width: 4%;
+  margin: 30px auto 10px;
+}
+.app__iconContainer {
+  text-align: center;
+  margin: 20px auto 10px;
+  display: flex;
+  justify-content: center;
+}
+.app__iconContainer__icon {
+  width: 30px;
+  height: 30px;
+  font-size: 30px;
+  color: rgba(238, 161, 18, 0.9803921569);
+  background-color: rgba(4, 11, 51, 0.9803921569);
+  border-radius: 50%;
+  padding: 5px;
+  margin: 0 10px;
+  cursor: pointer;
+}
+.app__footer__text {
+  text-align: center;
+  padding: 10px;
+}
+
+.name {
+  text-decoration: none;
+  color: rgba(4, 11, 51, 0.9803921569);
+  font-family: "Lobster", sans-serif;
+}
+
+.Header {
+  width: 100%;
+  height: 7rem;
+  padding: 1rem 0.1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 1px 1px 5px rgba(4, 11, 51, 0.9803921569);
+  background-color: #ffffff;
+  position: fixed;
+  z-index: 5;
+}
+.Header__logo {
+  padding-inline-start: 1.5rem;
+}
+.Header__logo a {
+  text-decoration: none;
+}
+.Header__content {
+  width: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Header__content__reserveButton {
+  width: 60%;
+  height: auto;
+  padding: 0.5rem 0.125rem;
+  text-align: center;
+  cursor: pointer;
+  border: 1px solid rgba(4, 11, 51, 0.9803921569);
+  font-size: 15px;
+  color: rgba(4, 11, 51, 0.9803921569);
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.Header__content__hamburger__button {
+  font-size: 35px;
+  padding: 5px;
+  margin-inline-start: 10px;
+  border: none;
+  color: rgba(4, 11, 51, 0.9803921569);
+}
+
+.navList {
+  height: 495px;
+  width: 20%;
+  padding-block-start: 2rem;
+  box-shadow: 1px 1px 5px rgba(4, 11, 51, 0.9803921569);
+  position: fixed;
+  right: 0;
+  background-color: #ffffff;
+  z-index: 2;
+  margin-block-start: 7.1rem;
+}
+.navList__Item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.navList__Item__menuItems {
+  font-size: 14px;
+  font-weight: 600;
+  margin-block: 0.7rem;
+  text-decoration: none;
+  color: rgba(4, 11, 51, 0.9803921569);
+}
+.navList__Item__active {
+  font-size: 14px;
+  font-weight: 600;
+  margin-block: 0.7rem;
+  text-decoration: none;
+  color: rgba(238, 161, 18, 0.9803921569);
+  text-decoration: underline;
+}
+
+.hero {
+  padding-top: 7rem;
+}
+
+.imageSlide {
+  width: 100%;
+  height: 500px;
+}
+.imageSlide__chevronIcons__left {
+  position: absolute;
+  z-index: 2;
+  bottom: 300px;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 50px;
+  cursor: pointer;
+  transform: translate(0, -50%);
+}
+.imageSlide__chevronIcons__right {
+  position: absolute;
+  right: 0;
+  z-index: 2;
+  bottom: 300px;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 50px;
+  cursor: pointer;
+  transform: translate(0, -50%);
+}
+.imageSlide__imageContainer {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  transition: 1s ease;
+}
+
+.imageContainer.fade-out {
+  opacity: 0.5;
+}
+
+.menuHero {
+  width: 100%;
+  height: 500px;
+  background-image: url(../../../menuHero.jpg);
+  background-position: center;
+  background-size: contain;
+}/*# sourceMappingURL=main.css.map */

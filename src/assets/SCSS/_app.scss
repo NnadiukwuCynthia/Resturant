@@ -1,0 +1,45 @@
+@use './color' as color;
+@use './font' as font;
+@use './placeholder';
+.app{
+    
+    &__logo{
+        width: 4%;
+        margin: 30px auto 10px;
+    }
+
+    &__iconContainer{
+       
+        text-align: center;
+        margin: 20px auto 10px;
+        display: flex;
+        justify-content: center;
+        
+        
+        &__icon{
+            width: 30px;
+            height: 30px;
+            font-size: 30px;
+            color: color.$sunset_yellow;
+            background-color: color.$navy_blue;
+            border-radius: 50%;
+            padding: 5px;
+            margin: 0 10px;
+            cursor: pointer;
+        }
+    }
+
+    &__footer{
+
+        &__text{
+            text-align: center;
+            padding: 10px;
+            @extend %btn-fonts;
+        }
+    }
+}
+.name{
+    text-decoration: none;
+    color: color.$navy_blue;
+    font-family: font.$Logo-Font;
+}

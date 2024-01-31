@@ -10,28 +10,35 @@ import Menu from './pages/Menu';
 import Contact from './pages/Contact';
 import Faq from './pages/FAQ';
 import Gallery from './pages/Gallery';
+import Root from './components/Root';
 
 const router = createBrowserRouter([
- { path: '/',
-    element: <App/>,
-    children: [
-      {
-        path: '/menu',
-        element: <Menu/>
-      },
-      {
-        path: '/contact',
-        element: <Contact/>
-      },
-      {
-        path: '/faq',
-        element: <Faq/>
-      },
-      {path: '/gallery',
-        element: <Gallery/>
-      }
+  {path: '/',
+    element: <Root/>,
+    children:[
+      
+    { path: '/',
+    index: true,
+    element: <App/>,    
+    },
+    {
+      path: '/menu',
+      element: <Menu/>
+    },
+    {
+      path: '/contact',
+      element: <Contact/>
+    },
+    {
+      path: '/faq',
+      element: <Faq/>
+    },
+    {path: '/gallery',
+      element: <Gallery/>
+    }
     ]
   },
+
   
 ])
 

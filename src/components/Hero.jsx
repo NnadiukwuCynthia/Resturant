@@ -1,4 +1,4 @@
-import { GoChevronLeft, GoChevronRight } from "react-icons/go";
+
 import Imageslider from "./Imageslider";
 
 const Hero = () => {
@@ -10,13 +10,9 @@ const Hero = () => {
         { url: '../../img-5.jpg'},
         { url: '../../img-6.jpg'},
     ]    
-    
+  
   return (
     <div className="hero">
-        <div className="hero__chevronIcons">
-            <GoChevronLeft className="hero__chevronIcons__left"/>
-            <GoChevronRight className="hero__chevronIcons__right"/>
-        </div>
             <Imageslider imageSlides={imageSlides}/>
     </div>
   )

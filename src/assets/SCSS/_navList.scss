@@ -2,13 +2,15 @@
 @use './placeholder';
 
 .navList{
-    height: 100vh;
+    height: 495px;
     width: 20%;
-    padding-block-start: 8rem;
+    padding-block-start: 2rem;
     box-shadow: 1px 1px 5px color.$navy_blue;
     position: fixed; 
     right: 0;
     background-color: color.$snow_white;
+    z-index: 2;
+    margin-block-start: 7.1rem;
     // transform: translateX(0);
     // transition: 1.5s ease;
 
@@ -43,6 +45,6 @@
 
 // .visible{
 //     right: 0;
-//     transform: translateX(100%);
+//     transform: translateX(10%);
 //     transition: 1.5s ease all;
 // }

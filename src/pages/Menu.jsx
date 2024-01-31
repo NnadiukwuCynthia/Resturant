@@ -1,8 +1,10 @@
-
+import MenuHero from '../components/Menu/menuHero';
 
 const Menu = () => {
   return (
-    <div>Menu</div>
+    <div>
+      <MenuHero/>
+    </div>
   )
 }
 
