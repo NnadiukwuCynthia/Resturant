@@ -10,3 +10,11 @@
 %btn-fonts{
     font-family: font.$primary-font;
 }
+
+%hero-fonts{
+    font-family: font.$primary-font;
+    color: color.$snow_white;
+    font-size: 70px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}

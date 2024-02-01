@@ -9,12 +9,14 @@ const Root = () => {
   const toggleMenu = () => {
     setIsMenuVisible(!isMenuVisible);
   };
-
+  const handleMenuOptionClick = () => {
+        toggleMenu();
+  };
   return (
     <>
     <div className="root">
     <Header isMenuVisible={isMenuVisible} toggleMenu={toggleMenu}/>
-    <NavList isMenuVisible={isMenuVisible}/>
+    <NavList isMenuVisible={isMenuVisible} onMenuOptionClick={handleMenuOptionClick}/>
     </div>
     <Outlet/>
     </>
