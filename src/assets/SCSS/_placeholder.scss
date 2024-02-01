@@ -18,3 +18,8 @@
     letter-spacing: 2px;
     text-transform: uppercase;
 }
+
+%regular-fonts{
+    font-family: font.$regularText-Font;
+    color: color.$navy_blue;
+}

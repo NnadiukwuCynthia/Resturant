@@ -1,17 +1,16 @@
 @use './color' as color;
 @use './font' as font;
 @use './placeholder';
-.app{
+.footerContainer{
     
     &__logo{
         width: 4%;
-        margin: 30px auto 10px;
+        margin: 30px auto;
     }
 
     &__iconContainer{
-       
         text-align: center;
-        margin: 20px auto 10px;
+        margin: 20px auto;
         display: flex;
         justify-content: center;
         
@@ -19,7 +18,7 @@
         &__icon{
             width: 30px;
             height: 30px;
-            font-size: 30px;
+            font-size: 25px;
             color: color.$sunset_yellow;
             background-color: color.$navy_blue;
             border-radius: 50%;
@@ -38,6 +37,7 @@
         }
     }
 }
+
 .name{
     text-decoration: none;
     color: color.$navy_blue;

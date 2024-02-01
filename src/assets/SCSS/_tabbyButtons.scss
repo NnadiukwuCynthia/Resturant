@@ -1,9 +1,93 @@
+@use './placeholder';
+@use './color' as color;
 
 .tabby{
    
    &__tabbyButton{
-    display: flex;
-    justify-content: center;
- 
-   }
+        display: flex;
+        justify-content: center;
+        
+        &__active{
+            @extend %btn-fonts;
+            border: none;
+            width: 200px;
+            background-color: color.$midnight_color;
+            color: color.$sunset_yellow;
+            margin-inline-start: 15px;
+        }
+
+        &__button{
+            @extend %btn-fonts;
+            border: 1px solid color.$sunset_yellow;
+            width: 200px;
+            color: color.$midnight_color;
+            margin-inline-start: 15px;
+        }
+    }    
+}
+
+.tabby__eachBtnContent{
+    width: 45%;
+    margin: auto;
+    text-align: center;
+
+    .tabby__content{
+
+        &__firstText{
+            @extend %btn-fonts;
+            margin: 40px 0;
+        }
+
+        &__priceText{
+            @extend %regular-fonts;
+            margin: 40px 0;
+            font-weight: 600;
+        }
+        
+        &__secondText{
+            @extend %regular-fonts;
+            font-size: 1.15rem;
+            color: color.$midnight_color;
+            font-weight: 600;
+            margin-block-end: 15px;
+        }
+
+        &__thirdText{
+            @extend %regular-fonts;
+            font-size: 14px;
+            color: color.$sunset_yellow;
+            font-weight: 600;
+            margin-block-end: 10px;
+        }
+
+        &__dash{
+            @extend %regular-fonts;
+            font-weight: bold;
+            margin-block: 40px;
+        }
+
+        &__fourthText{
+            @extend %regular-fonts;
+            font-size: 14px;
+            font-weight: 600;
+            margin-block-end: 10px;
+            color: color.$midnight_color;
+
+            &__underline{
+                text-decoration: underline;
+            }
+        }
+
+        &__emailText{
+            @extend %regular-fonts;
+            font-size: 14px;
+            color: color.$midnight_color;
+            font-weight: 600;
+            margin-block: 30px;
+
+            &__email{
+                color: color.$sunset_yellow;
+            }
+        }
+    }
 }

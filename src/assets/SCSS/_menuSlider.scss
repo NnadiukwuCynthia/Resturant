@@ -1,0 +1,16 @@
+
+.Slider{
+    width: 70%;
+    margin: 20px auto;
+
+    &__menuSlide{
+    height: 450px;
+
+    &__slider{
+        width: 100%;
+        height: 100%;
+        background-position: center;
+        background-size: cover;
+    }
+}
+}

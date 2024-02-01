@@ -8,5 +8,11 @@
     src: url(../Fonts/Lobster/Lobster-Regular.ttf);
 }
 
+@font-face {
+    font-family: 'Arsenal';
+    src: url(../Fonts/Arsenal/Arsenal-Regular.ttf);
+}
+
 $primary-font: 'Inter', sans-serif;
 $Logo-Font: 'Lobster', sans-serif;
+$regularText-Font: 'Arsenal', sans-serif;
