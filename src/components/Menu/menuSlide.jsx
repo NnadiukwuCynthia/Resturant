@@ -25,15 +25,13 @@ const MenuSlide = () => {
 
     ]
   return (
-    <div className='Slider'>
     <Slider {...settings} >
       {images.map((image, index) => (
-        <div key={index} className='Slider__menuSlide'>
-          <div className='Slider__menuSlide__slider' style={{ backgroundImage: `url(${image})` }}></div>
+        <div key={index} className='menuSlide'>
+          <div className='menuSlide__slider' style={{ backgroundImage: `url(${image})` }}></div>
         </div>
       ))}
     </Slider>
-    </div>
   )
 }
 

@@ -27,11 +27,12 @@
 }
 
 .tabby__eachBtnContent{
-    width: 45%;
-    margin: auto;
-    text-align: center;
-
+    
+    
     .tabby__content{
+        width: 60%;
+        margin: auto;
+        text-align: center;
 
         &__firstText{
             @extend %btn-fonts;
@@ -89,5 +90,46 @@
                 color: color.$sunset_yellow;
             }
         }
+
+        &__button{
+            @extend %btn-fonts;
+            font-size: 14px;
+            width: 30%;
+            height: 40px;
+            font-weight: bold;
+            border: 1px solid color.$sunset_yellow;
+            text-transform: uppercase;
+            cursor: pointer;
+            margin-block-end: 1.5rem;
+
+            &:hover{
+                color: color.$snow_white;
+                background-color: color.$sunset_yellow;
+                border: none;
+                transition: 1s;
+            }
+        }
     }
 }
+
+.tabby__content1{
+    width: 90%;
+    margin: auto;
+    text-align: center;
+
+    .tabby__imgcontainer{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    
+        .wineImages{
+            width: 30%;
+            height: 250px;
+            margin: 15px;
+            border-radius: 5px;
+        }
+    }
+}
+

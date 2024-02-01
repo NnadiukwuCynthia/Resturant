@@ -1,9 +1,8 @@
 
-.Slider{
-    width: 70%;
+ 
+.menuSlide{
     margin: 20px auto;
-
-    &__menuSlide{
+    width: 100%;
     height: 450px;
 
     &__slider{
@@ -12,5 +11,4 @@
         background-position: center;
         background-size: cover;
     }
-}
 }
