@@ -22,3 +22,24 @@
         }
     }
 }
+
+.faqContent{
+    width: 70%;
+    margin: 6rem auto;
+    text-align: center;
+
+    &__Question{
+        @extend %hero-fonts;
+        font-size: 35px;
+        margin-block: 30px 40px;
+        color: color.$midnight_color;
+    }
+
+    &__Answer{
+        @extend %regular-fonts;
+        font-weight: bold;
+        color: color.$midnight_color;
+        line-height: 50px;
+        font-size: 18px;
+    }
+}
