@@ -1,8 +1,8 @@
-// import React from 'react'
+import FaqHero from "../components/FAQ/FaqHero"
 
 const Faq = () => {
   return (
-    <div>FAQ</div>
+    <FaqHero/>
   )
 }
 
