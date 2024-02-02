@@ -14,6 +14,8 @@
             background-color: color.$midnight_color;
             color: color.$sunset_yellow;
             margin-inline-start: 15px;
+            text-transform: uppercase;
+
         }
 
         &__button{
@@ -22,6 +24,14 @@
             width: 200px;
             color: color.$midnight_color;
             margin-inline-start: 15px;
+            text-transform: uppercase;
+
+            &:hover{
+                background-color: color.$midnight_color;
+                color: color.$sunset_yellow;
+                transition: 1s;
+                border: none;
+            }
         }
     }    
 }

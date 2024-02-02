@@ -24,3 +24,35 @@
         }
     }
 }
+
+.contactDetails{
+    margin-block-end: 6rem;
+
+    &__content{
+        width: 50%;
+        margin: 30px auto;
+        text-align: center;
+
+        &__headText{
+            @extend %btn-fonts;
+            font-size: 22px;
+            text-transform: uppercase;
+            padding-block: 3rem 1rem;
+        }
+
+        &__text{
+            @extend %regular-fonts;
+            font-size: 17px;
+            color:  color.$midnight_color;
+            padding-block: 1rem;
+            font-weight: 500;
+
+            &__link{
+                @extend %regular-fonts;
+                font-size: 17px;
+                color:  color.$midnight_color;
+                font-weight: 500; 
+            }
+        }
+    }
+}
