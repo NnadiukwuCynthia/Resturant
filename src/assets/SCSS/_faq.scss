@@ -37,9 +37,12 @@
 
     &__Answer{
         @extend %regular-fonts;
-        font-weight: bold;
         color: color.$midnight_color;
         line-height: 50px;
         font-size: 18px;
+
+        &__span{
+            font-weight: bold;
+        }
     }
 }

@@ -10,7 +10,7 @@ const FaqContent = () => {
           Wed, Thurs, Fri, and Sun : 5:30pm & 8:15pm <br />
           Sat : 4pm, 6:30pm, 8:45pm.</p>
       <p className="faqContent__Question">Does Cuisine have a dress Code?</p>
-      <p className="faqContent__Answer">LWe do not have a required dress code, however, most guests do dress in business or smart casual. <br />We do ask that our guests refrain from strongly scented perfumes and cologne. </p>
+      <p className="faqContent__Answer">We do not have a required dress code, however, most guests do dress in business or smart casual. <br />We do ask that our guests refrain from strongly scented perfumes and cologne. </p>
       <p className="faqContent__Question">Do you have a valet parking?</p>
       <p className="faqContent__Answer">We do not have valet parking. Street parking is available along 14th Street as well as the side streets. <br />We highly encourage our guests to arrange transportation. </p>
       <p className="faqContent__Question">What are your corkage policy?</p>
