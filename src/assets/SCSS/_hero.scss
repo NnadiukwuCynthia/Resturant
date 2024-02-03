@@ -2,6 +2,12 @@
 @use './color' as color;
 
 .hero{
-        padding-top: 7rem;
+        padding-block-start: 7rem;
     
+}
+
+@media screen and (max-width: 485px) {
+        .hero{
+            padding-block-start: 5rem;
+        }
 }

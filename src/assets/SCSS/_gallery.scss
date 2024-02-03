@@ -44,3 +44,16 @@
         }
     }
 }
+
+@media screen and (max-width: 485px) {
+    .galleryHero{
+        height: 400px;
+    
+        &__content{
+            
+            &__text{
+                font-size: 45px;
+            }
+        }
+    }
+}

@@ -45,3 +45,9 @@
 .imageContainer.fade-out {
     opacity: 0.5;
 }
+
+@media screen and (max-width: 485px) {
+    .imageSlide{
+        height: 400px;
+    }
+}
