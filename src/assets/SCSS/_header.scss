@@ -47,3 +47,15 @@
             }
         }
 }
+
+@media screen and (max-width: 768px) {
+    .Header {
+      &__content {
+        width: 40%;
+
+        &__reserveButton{
+            width: 60%;
+        }    
+      }
+    }
+}

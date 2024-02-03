@@ -143,3 +143,57 @@
     }
 }
 
+@media screen and (max-width: 550px) {
+    .tabby{
+   
+        &__tabbyButton{
+            
+             
+             &__active{
+                 border: none;
+                 width: 160px;
+                 font-size: 14px;
+                 font-weight: bold;
+             }
+     
+             &__button{
+                 border: 1px solid color.$sunset_yellow;
+                 width: 160px;
+                 font-size: 14px;
+                 font-weight: bold;
+                      
+                 &:hover{
+                     background-color: color.$midnight_color;
+                     color: color.$sunset_yellow;
+                     transition: 1s;
+                     border: none;
+                 }
+             }
+        }    
+    }
+
+    .tabby__eachBtnContent{
+    
+        .tabby__content {
+        
+            &__button{
+                width: 40%;
+            }
+        }
+    
+    }
+
+
+    .tabby__content1{
+        
+        .tabby__imgcontainer{
+            
+            .wineImages{
+                width: 70%;
+                height: 250px;
+                margin: 15px;
+                border-radius: 5px;
+            }
+        }
+    }
+}

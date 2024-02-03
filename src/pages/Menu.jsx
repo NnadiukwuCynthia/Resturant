@@ -1,7 +1,6 @@
 import Footer from '../components/Footer';
 import TabbyButtons from '../components/Menu/TabbyButtons';
 import MenuHero from '../components/Menu/menuHero';
-// import MenuSlide from '../components/Menu/menuSlide';
 
 const Menu = () => {
 
@@ -10,7 +9,6 @@ const Menu = () => {
     <div>
       <MenuHero/>
       <TabbyButtons/>
-      {/* <MenuSlide/> */}
       <br />
       <Footer/>
     </div>
