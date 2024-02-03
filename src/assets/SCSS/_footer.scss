@@ -43,3 +43,13 @@
     color: color.$navy_blue;
     font-family: font.$Logo-Font;
 }
+
+@media screen and (max-width: 839px) {
+    .footerContainer{
+    
+        &__logo{
+            width: 10%;
+            margin: 30px auto;
+        }
+    }
+}

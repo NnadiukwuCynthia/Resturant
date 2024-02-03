@@ -59,3 +59,34 @@
       }
     }
 }
+
+@media screen and (max-width: 464px) {
+    .Header {
+        &__content {
+          width: 40%;
+  
+          &__reserveButton{
+              width: 80%;
+          }    
+        }
+      }
+}
+@media screen and (max-width: 385px) {
+    .Header {
+        height: 8rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+
+        &__content {
+            width: 100%;
+            justify-content: space-evenly;
+    
+            &__reserveButton{
+                width: 60%;
+            }    
+          }
+        
+    }
+}
